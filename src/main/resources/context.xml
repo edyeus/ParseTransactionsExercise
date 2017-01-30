@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="reportOption" class="com.edy.interview.report.ReportBuilder">
+        <constructor-arg index="0">
+            <list>
+                <ref bean="crystalBall"/>
+                <ref bean="ignoreDonuts"/>
+                <ref bean="ignoreCC"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="ignoreDonuts" class="com.edy.interview.report.IgnoreDonuts"/>
+
+    <bean id="ignoreCC" class="com.edy.interview.report.IgnoreCCPayment"/>
+
+    <bean id="crystalBall" class="com.edy.interview.report.CrystalBall"/>
+
+</beans>
