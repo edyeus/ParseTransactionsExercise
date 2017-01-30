@@ -40,6 +40,7 @@ Example valid script:
 Log is set at info level and output to console. This includes logs indicating step in the process as well as resulting reports.
 The app will generate a "result" file containing all spending and income reports. Different reports will be separated by line.
 If -cc option is used, a file named "ccs" will be created, including filtered out credit card related transactions.
+If "result" annd "ccs" file exists, new reports will be appended to the bottom of existing files.
 
 
 _Please feel free to contact me if you have any questions, email: edy.buongiorno@gmail.com_

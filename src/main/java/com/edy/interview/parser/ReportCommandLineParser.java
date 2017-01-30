@@ -56,7 +56,7 @@ public class ReportCommandLineParser {
         FileWriter fw = null;
         BufferedWriter bw = null;
         try {
-            fw = new FileWriter(RESULT_FILE);
+            fw = new FileWriter(RESULT_FILE, true);
             bw = new BufferedWriter(fw);
 
             if (reports.isEmpty()) bw.write("No Result, possibly error occurred.");

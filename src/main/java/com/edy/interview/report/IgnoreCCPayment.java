@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.Duration;
@@ -111,7 +112,7 @@ public class IgnoreCCPayment implements ReportOption{
         FileWriter fw = null;
         BufferedWriter bw = null;
         try {
-            fw = new FileWriter(RESULT_FILE);
+            fw = new FileWriter(RESULT_FILE, true);
             bw = new BufferedWriter(fw);
             StringBuilder builder = new StringBuilder();
             builder.append("[");
